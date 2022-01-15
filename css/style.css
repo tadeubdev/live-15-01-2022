@@ -155,6 +155,10 @@ input[type=number] {
     box-shadow: 0 20px 10px rgba(0,0,0,0.10);
 }
 
+#primary-menu-cart.active {
+    display: block;
+}
+
 #primary-menu-cart-header {
     padding: 0 20px;
     line-height: 60px;
