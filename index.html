@@ -39,7 +39,7 @@
       </div>
 
       <nav id="primary-menu-right">
-        <a href="javascript:void(0);" id="primary-menu-cart">
+        <a href="javascript:void(0);" id="primary-menu-cart-btn">
           <img src="./images/icon-cart.svg" alt="Open/close cart">
         </a>
         <a href="javascript:void(0);" id="primary-menu-profile">
@@ -47,7 +47,7 @@
         </a>
       </nav>
 
-      <div id="primary-menu-cart" class="has-products">
+      <div id="primary-menu-cart" class="has-products-">
         <div id="primary-menu-cart-header">
           <h4 id="menu-title">Cart</h4>
         </div>
@@ -83,63 +83,71 @@
   </header>
 
   <main id="main">
-    <article id="product">
-      <div id="product-images">
-        <div id="product-controls">
-          <a href="javascript:void(0);" class="control control-previous">
-            <img src="./images/icon-previous.svg" alt="Previous">
-          </a>
-          <a href="javascript:void(0);" class="control control-next">
-            <img src="./images/icon-next.svg" alt="Next">
-          </a>
-        </div>
-        <div id="product-images-content">
-          <img src="./images/image-product-1.jpg" class="product-image active" alt="Product 1" />
-          <img src="./images/image-product-2.jpg" class="product-image" alt="Product 2" />
-          <img src="./images/image-product-3.jpg" class="product-image" alt="Product 3" />
-          <img src="./images/image-product-4.jpg" class="product-image" alt="Product 4" />
-        </div>
-      </div>
-      
-      <section id="product-content">
-        <a href="#" id="product-company">
-          Sneaker Company
-        </a>
-        <h1 id="product-title">
-          Fall Limited Edition Sneakers
-        </h1>
-        <p id="product-description">
-          These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.
-        </p>
-        <div id="product-price">
-          <div>
-            <span id="product-price-actual">$125.00</span>
-            <span id="product-price-discount">50%</span>
-          </div>
-          <div id="product-price-old">
-            $250.00
-          </div>
-        </div>
-        <div id="product-footer">
-          <div id="product-amount">
-            <a href="javascript:void(0);" id="product-amount-minus">
-              <img src="./images/icon-minus.svg" alt="Minus" />
+    <div class="content">
+      <article id="product">
+        <div id="product-images">
+          <div id="product-controls">
+            <a href="javascript:void(0);" class="control control-previous">
+              <img src="./images/icon-previous.svg" alt="Previous">
             </a>
-            <input type="number" id="product-amount-input" value="0" min="0" max="99" />
-            <a href="javascript:void(0);" id="product-amount-plus">
-              <img src="./images/icon-plus.svg" alt="Plus" />
+            <a href="javascript:void(0);" class="control control-next">
+              <img src="./images/icon-next.svg" alt="Next">
             </a>
           </div>
-          <div id="product-add-to-cart">
-            <button class="btn btn-primary btn-shadow btn-block">
-              <img src="./images/icon-cart.svg" alt="Add to cart" />
-              Add to cart
-            </button>
+          <div id="product-images-content">
+            <img src="./images/image-product-1.jpg" class="product-image active" alt="Product 1" />
+            <img src="./images/image-product-2.jpg" class="product-image" alt="Product 2" />
+            <img src="./images/image-product-3.jpg" class="product-image" alt="Product 3" />
+            <img src="./images/image-product-4.jpg" class="product-image" alt="Product 4" />
+          </div>
+          <div id="product-images-thumbnail">
+            <img src="./images/image-product-1-thumbnail.jpg" class="product-image-thumb active" alt="Product 1" />
+            <img src="./images/image-product-2-thumbnail.jpg" class="product-image-thumb" alt="Product 2" />
+            <img src="./images/image-product-3-thumbnail.jpg" class="product-image-thumb" alt="Product 3" />
+            <img src="./images/image-product-4-thumbnail.jpg" class="product-image-thumb" alt="Product 4" />
           </div>
         </div>
-      </section>
-    </article>
+        
+        <section id="product-content">
+          <a href="#" id="product-company">
+            Sneaker Company
+          </a>
+          <h1 id="product-title">
+            Fall Limited Edition Sneakers
+          </h1>
+          <p id="product-description">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div id="product-price">
+            <div>
+              <span id="product-price-actual">$125.00</span>
+              <span id="product-price-discount">50%</span>
+            </div>
+            <div id="product-price-old">
+              $250.00
+            </div>
+          </div>
+          <div id="product-footer">
+            <div id="product-amount">
+              <a href="javascript:void(0);" id="product-amount-minus">
+                <img src="./images/icon-minus.svg" alt="Minus" />
+              </a>
+              <input type="number" id="product-amount-input" value="0" min="0" max="99" />
+              <a href="javascript:void(0);" id="product-amount-plus">
+                <img src="./images/icon-plus.svg" alt="Plus" />
+              </a>
+            </div>
+            <div id="product-add-to-cart">
+              <button class="btn btn-primary btn-shadow btn-block">
+                <img src="./images/icon-cart.svg" alt="Add to cart" />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
   </main>
   
   <div class="attribution">

@@ -90,7 +90,7 @@ input[type=number] {
     display: none;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.75);
 }
 
 #primary-menu-content {
@@ -147,6 +147,7 @@ input[type=number] {
 
 #primary-menu-cart {
     width: 90vw;
+    display: none;
     background-color: var(--white);
     margin: 20px auto 20px auto;
     border-radius: 10px;
@@ -186,6 +187,10 @@ input[type=number] {
     display: grid;
 }
 
+.has-products .primary-menu-checkout {
+    display: block;
+}
+
 .primary-menu-item {
     grid-template-columns: 70px 1fr 20px;
 }
@@ -196,7 +201,7 @@ input[type=number] {
 }
 
 .primary-menu-checkout {
-    display: block;
+    display: none;
     margin-top: 20px;
 }
 
