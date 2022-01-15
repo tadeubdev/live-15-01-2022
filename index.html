@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header id="primary-menu">
+    <div class="content">
+      <a href="javascript:void(0);" id="primary-menu-action">
+        <img src="./images/icon-menu.svg" alt="Menu open/close">
+      </a>
+
+      <span id="primary-menu-logo">
+        <img src="./images/logo.svg" alt="Sneakers">
+      </span>
+
+      <div id="primary-menu-container">
+        <div id="primary-menu-content">
+          <a href="javascript:void(0);" id="primary-menu-close">
+            <img src="./images/icon-close.svg" alt="Close menu" />
+          </a>
+          <nav id="primary-menu-links">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <nav id="primary-menu-right">
+        <a href="javascript:void(0);" id="primary-menu-cart">
+          <img src="./images/icon-cart.svg" alt="Open/close cart">
+        </a>
+        <a href="javascript:void(0);" id="primary-menu-profile">
+          <img src="./images/image-avatar.png" alt="Profile">
+        </a>
+      </nav>
+
+      <div id="primary-menu-cart" class="has-products">
+        <div id="primary-menu-cart-header">
+          <h4 id="menu-title">Cart</h4>
+        </div>
+        <div id="primary-menu-cart-body">
+          <div id="primary-menu-empty">
+            <h5>Your cart is empty.</h5>
+          </div>
+          <article class="primary-menu-item">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Product 1" class="primary-menu-image" />
+            <div class="primary-menu-body">
+              <h5 class="primary-menu-title">
+                Autumn Limited Edition
+              </h5>
+              <p class="primary-menu-content">
+                <span>$125.00</span>
+                x
+                <span>3</span>
+                <strong>$375.00</strong>
+              </p>
+            </div>
+            <a href="javascript:void(0);" class="primary-menu-trash">
+              <img src="./images/icon-delete.svg" alt="Remove product" />
+            </a>
+          </article>
+          <a href="#" class="primary-menu-checkout">
+            <button class="btn btn-primary btn-block">
+              Checkout
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article id="product">
+      <div id="product-images">
+        <div id="product-controls">
+          <a href="javascript:void(0);" class="control control-previous">
+            <img src="./images/icon-previous.svg" alt="Previous">
+          </a>
+          <a href="javascript:void(0);" class="control control-next">
+            <img src="./images/icon-next.svg" alt="Next">
+          </a>
+        </div>
+        <div id="product-images-content">
+          <img src="./images/image-product-1.jpg" class="product-image active" alt="Product 1" />
+          <img src="./images/image-product-2.jpg" class="product-image" alt="Product 2" />
+          <img src="./images/image-product-3.jpg" class="product-image" alt="Product 3" />
+          <img src="./images/image-product-4.jpg" class="product-image" alt="Product 4" />
+        </div>
+      </div>
+      
+      <section id="product-content">
+        <a href="#" id="product-company">
+          Sneaker Company
+        </a>
+        <h1 id="product-title">
+          Fall Limited Edition Sneakers
+        </h1>
+        <p id="product-description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div id="product-price">
+          <div>
+            <span id="product-price-actual">$125.00</span>
+            <span id="product-price-discount">50%</span>
+          </div>
+          <div id="product-price-old">
+            $250.00
+          </div>
+        </div>
+        <div id="product-footer">
+          <div id="product-amount">
+            <a href="javascript:void(0);" id="product-amount-minus">
+              <img src="./images/icon-minus.svg" alt="Minus" />
+            </a>
+            <input type="number" id="product-amount-input" value="0" min="0" max="99" />
+            <a href="javascript:void(0);" id="product-amount-plus">
+              <img src="./images/icon-plus.svg" alt="Plus" />
+            </a>
+          </div>
+          <div id="product-add-to-cart">
+            <button class="btn btn-primary btn-shadow btn-block">
+              <img src="./images/icon-cart.svg" alt="Add to cart" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
